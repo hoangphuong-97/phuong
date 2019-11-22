@@ -11,6 +11,7 @@ REGEX=[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}
       echo " REGEX no exit"
       exit 2
 fi 
+echo " hoangphuong"
 IP=${BASH_REMATCH[0]}
 ping -c1 $IP 1>/dev/null
 if [ $? -eq 0 ]; then
