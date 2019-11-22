@@ -4,6 +4,7 @@ if ! [ $# -eq 1 ]; then
       echo "provice one ag"
       exit 1
 fi
+echo " phuong"
 VAR=$1
 REGEX=[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}
  if ! [[ $VAR =~ $REGEX ]]; then
